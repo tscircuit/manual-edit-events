@@ -23,6 +23,9 @@ export const editTraceHintEvent = base_event.extend({
   pcb_edit_event_type: z.literal("edit_trace_hint"),
   pcb_port_id: z.string(),
   pcb_trace_hint_id: z.string().optional(),
+  route: z.array(
+    z.object({ x: z.number(), y: z.number(), via: z.boolean().optional() })
+  ),
 })
 
 export type EditTraceHintEvent = z.infer<typeof editTraceHintEvent>
