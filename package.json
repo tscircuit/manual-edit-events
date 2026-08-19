@@ -1,6 +1,10 @@
 {
   "name": "@tscircuit/manual-edit-events",
   "version": "0.0.5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tscircuit/manual-edit-events.git"
+  },
   "description": "",
   "main": "dist/index.js",
   "scripts": {
